@@ -1,13 +1,14 @@
 --Made By: vDuels
 
-game:GetService("StarterGui"):SetCore("SendNotification", {
-  Title = "AIMBOT",
-  Text = "Press L.Ctrl"
-})
+print("AIMBOT, L.CTRL")
+
+print("ESP, L.ALT")
+
+print("Fucking Nigger")
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
-  Title = "ESP",
-  Text = "Press L.Alt"
+  Title = "Controls in Dev Console",
+  Text = "Press F9"
 })
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
