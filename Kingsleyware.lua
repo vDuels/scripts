@@ -6,6 +6,12 @@ print("ESP, L.ALT")
 
 print("Fucking Nigger")
 
+print("Made by vDuels")
+
+print("Made for kingsley")
+
+print("Notes, You can buy an alternate verson of the script, known as JoyBoy, for one KingJoy Point. $5 giftcard access)
+
 game:GetService("StarterGui"):SetCore("SendNotification", {
   Title = "Controls in Dev Console",
   Text = "Press F9"
@@ -249,7 +255,7 @@ game:GetService('RunService').RenderStepped:connect(function()
 			if AIM then
 				CC.CoordinateFrame = CFrame.new(CC.CoordinateFrame.p, AIM.CFrame.p)
 			end
-			GUI_TARGET.Text = 'AIMBOT : '.. TARGET.Name:sub(1, 5)
+			GUI_TARGET.Text = 'TARGET : '.. TARGET.Name:sub(1, 5)
 		else
 			GUI_TARGET.Text = 'AIMBOT : OFF'
 		end
