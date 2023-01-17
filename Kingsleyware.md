@@ -11,8 +11,13 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 })
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
-  Title = "THANK YOU FOR USING AIM!",
-  Text = "you fucking cheater"
+  Title = "THANK YOU FOR USING KINGSLEYWARE!",
+  Text = "WHEN YOU'RE SHIT LIKE KINGSLEY"
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification", {
+  Title = "STOP CHEATING",
+  Text = "USE AIMLABS NIGGA"
 })
 
 PLAYER  = game.Players.LocalPlayer
