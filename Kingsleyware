@@ -10,7 +10,7 @@ print("Made by vDuels")
 
 print("Made for kingsley")
 
-print("Notes, You can buy an alternate verson of the script, known as JoyBoy, for one KingJoy Point. $5 giftcard access)
+print("Notes, You can buy an alternate verson of the script, known as JoyBoy, for one KingJoy Point. $5 giftcard access")
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
   Title = "Controls in Dev Console",
