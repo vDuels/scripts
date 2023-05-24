@@ -56,7 +56,7 @@ Tab1:AddToggle({
 	Name = "Outline Esp",
 	Default = false,
 	Callback = function(Value)
-		_G.espout == Value
+		_G.espout = Value
 		espout()
 	end    
 })
