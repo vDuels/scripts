@@ -1,12 +1,19 @@
-	game.Players.PlayerAdded:Connect(function(plr)
-   plr.CharacterAdded:Connect(function(chr)
-       local esp = Instance.new("Highlight")
-       esp.Name = plr.Name
-       esp.FillTransparency = 1
-       esp.FillColor = Color3.new(1, 0.666667, 0)
-       esp.OutlineColor = Color3.new(1, 0.333333, 1)
-       esp.OutlineTransparency = 0
-       esp.Parent = chr
-	   wait(0.1)
-   end)
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local Highlight = Instance.new("Highlight")
+Highlight.Name = "Highlight"
+function ApplyToCurrentPlayers()
+    for i,player in pairs(Players:GetChildren()) do 
+        repeat wait() until player.Character
+        if not player.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
+            local HighlightClone = Highlight:Clone()
+            HighlightClone.Adornee = player.Character
+            HighlightClone.Parent = player.Character:FindFirstChild("HumanoidRootPart")
+            HighlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+            HighlightClone.Name = "Highlight"
+        end
+    end
+end    
+RunService.Heartbeat:Connect(function()
+    ApplyToCurrentPlayers()
 end)
