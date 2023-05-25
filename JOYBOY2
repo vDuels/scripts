@@ -27,7 +27,7 @@ function espout()
 	end
 
 
-local SilentTab = Window:MakeTab({
+local TabSilent = Window:MakeTab({
 	Name = "Silent",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -41,7 +41,7 @@ PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 
 -- silent tap options
 
-SilentTab:AddToggle({
+TabSilent:AddToggle({
 	Name = "Outline Esp",
 	Default = false,
 	Callback = function(Value)
