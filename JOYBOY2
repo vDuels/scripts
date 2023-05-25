@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Kingslyware : Joyboy", HidePremium = false, SaveConfig = true, ConfigFolder = "JoyBoy",
-IntroEnabled = True, IntroText = "Kingslyware", IntroIcon = nil})
+IntroEnabled = True, IntroText = "Kingslyware"})
 
 --[[
 Name = <string> - The name of the UI.
